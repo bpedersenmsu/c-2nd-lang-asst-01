@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int global_i = 9; // globals should be avoided
+/*int global_i = 9; // globals should be avoided
 // this is just for convenience of illustration
 
 // Arguments in C functions are passed BY VALUE, including pointers,
@@ -28,4 +28,23 @@ int main() {
 
     return 0;
 
+}*/
+int global_i = 9; // globals should be avoided
+// this is just for convenience of illustration
+
+// Arguments in C functions are passed BY VALUE, including pointers,
+// so this function will not change the original variable the value
+// of which was used to assign the argument, in this case, global_i.
+// It will change the value of argument_i, but it is only a local
+// copy of global_i (see the function call in main() below).
+int will_return_it_changed(int argument_i) {
+    return argument_i + 1;
+}
+
+int main() {
+    printf("%d\n", global_i);
+    global_i = will_return_it_changed(global_i);
+    printf("%d\n", global_i);
+
+    return 0;
 }
