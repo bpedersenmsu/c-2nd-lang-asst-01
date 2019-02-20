@@ -1,0 +1,31 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c++: fatal error: -fuse-linker-plugin, but cyglto_plugin.dll not found
+compilation terminated.
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /cygdrive/c/Dev/CS2400/C_Assignments/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make.exe" "cmTC_5b4d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5b4d8.dir/build.make CMakeFiles/cmTC_5b4d8.dir/build
+make[1]: Entering directory '/cygdrive/c/Dev/CS2400/C_Assignments/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5b4d8.dir/testCXXCompiler.cxx.o
+/usr/bin/c++.exe     -o CMakeFiles/cmTC_5b4d8.dir/testCXXCompiler.cxx.o -c /cygdrive/c/Dev/CS2400/C_Assignments/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_5b4d8.exe
+/cygdrive/c/Users/peder/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_5b4d8.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_5b4d8.dir/testCXXCompiler.cxx.o  -o cmTC_5b4d8.exe -Wl,--out-implib,libcmTC_5b4d8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+c++: fatal error: -fuse-linker-plugin, but cyglto_plugin.dll not found
+compilation terminated.
+CMakeFiles/cmTC_5b4d8.dir/build.make:86: recipe for target 'cmTC_5b4d8.exe' failed
+make[1]: *** [cmTC_5b4d8.exe] Error 1
+make[1]: Leaving directory '/cygdrive/c/Dev/CS2400/C_Assignments/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_5b4d8/fast' failed
+make: *** [cmTC_5b4d8/fast] Error 2
+
+
