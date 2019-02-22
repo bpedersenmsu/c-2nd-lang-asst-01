@@ -42,9 +42,12 @@ int will_return_it_changed(int argument_i) {
 }
 
 int main() {
+    global_i = 333;
+
     printf("%d\n", global_i);
     global_i = will_return_it_changed(global_i);
-    printf("%d\n", global_i);
+    char global_i[] = "klnlnm";
+    printf("%s\n", global_i);
 
     return 0;
 }
